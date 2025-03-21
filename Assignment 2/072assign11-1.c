@@ -26,7 +26,7 @@ void own()
 	printf("pi = %.4f\n", ownju);
 	printf("pi = %.6f\n", ownju);
 	printf("pi = %.8f\n", ownju);
-	printf("pi = %.e\n", ownju);
+	printf("pi = %e\n", ownju);
 
 	return 0;
 }

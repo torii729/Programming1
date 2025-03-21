@@ -15,25 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="070assign02.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="071assign05.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="071assign07.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="072assign10.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="071assign09.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="072assign11-1.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="072assign11-2.c">
+    <ClCompile Include="124assign01.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
