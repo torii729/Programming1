@@ -18,5 +18,23 @@
     <ClCompile Include="124assign01.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="124assign02.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="124assign03.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="124assign04.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="125assign06.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="125assign07.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="126assign10.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
