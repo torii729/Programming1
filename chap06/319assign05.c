@@ -8,17 +8,23 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-void check();
+void check(void);
 void is_even(int n, int* even);
 void is_odd(int n, int* odd);
 
+// 함수를 호출하는 함수
 int main(void)
 {
 	check();
 	return 0;
 }
 
-void check()
+/*
+	변수를 선언 및 초기화하고 정수를 입력받는다.
+	is_even, is_odd 함수를 호출하여 짝수, 홀수 개수를 전달받는다.
+	그리고 짝수, 홀수 개수를 출력한다.
+*/
+void check(void)
 {
 	int n = 0;
 	int even = 0;
@@ -45,6 +51,7 @@ void check()
 	printf("입력받은 정수 중 짝수는 %d개, 홀수는 %d개입니다.", even, odd);
 }
 
+// 짝수인지 판단하는 함수
 void is_even(int n, int* even)
 {
 	if (n % 2 == 0)
@@ -53,6 +60,7 @@ void is_even(int n, int* even)
 	}
 }
 
+// 홀수인지 판단하는 함수
 void is_odd(int n, int* odd)
 {
 	if (n % 2 != 0)

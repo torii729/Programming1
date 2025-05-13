@@ -13,6 +13,7 @@
 int choose_menu(int* num);
 void print(int menu);
 
+// 변수 선언 및 초기화하고 함수를 호출하는 함수
 int main(void)
 {
 	int num = 0;
@@ -23,6 +24,7 @@ int main(void)
 	return 0;
 }
 
+// num을 입력받아 num이 0부터 3 사이에 있다면 num 값을 반환하는 함수
 int choose_menu(int* num)
 {
 	while (1)
@@ -37,6 +39,7 @@ int choose_menu(int* num)
 	}
 }
 
+// 전달받은 menu 값에 따라 출력하는 함수
 void print(int menu)
 {
 	if (menu == 1)

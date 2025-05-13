@@ -11,6 +11,7 @@
 void get_perimeter(int* x, int* y);
 void Square(int x, int y, int square);
 
+// 변수를 선언 및 초기화하고 함수를 호출하는 함수
 int main(void)
 {
 	int x = 0;
@@ -23,6 +24,7 @@ int main(void)
 	return 0;
 }
 
+// 가로와 세로 값을 입력받는 함수
 void get_perimeter(int* x, int* y)
 {
 	printf("가로? ");
@@ -32,6 +34,7 @@ void get_perimeter(int* x, int* y)
 	scanf("%d", y);
 }
 
+// 직사각형의 둘레를 계산하는 함수
 void Square(int x, int y, int square)
 {
 	square = (x * 2) + (y * 2);

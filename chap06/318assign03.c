@@ -7,11 +7,12 @@
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <math.h>
+#include <math.h> // 실수 계산이 필요하므로 헤더 파일을 하나 더 불러옴
 
 void coordinate(int* x1, int* x2, int* y1, int* y2);
 void distance(int x1, int x2, int y1, int y2, double dis);
 
+// 변수 선언 및 초기화하고 함수를 호출하는 함수
 int main(void)
 {
 	int x1 = 0;
@@ -26,6 +27,7 @@ int main(void)
 	return 0;
 }
 
+// 직선의 시작점 좌표와 직선의 끝점 좌표를 입력받는 함수
 void coordinate(int* x1, int* x2, int* y1, int* y2)
 {
 	printf("직선의 시작점 좌표? ");
@@ -35,10 +37,11 @@ void coordinate(int* x1, int* x2, int* y1, int* y2)
 	scanf("%d %d", x2, y2);
 }
 
+// 직선의 길이를 계산하는 함수
 void distance(int x1, int x2, int y1, int y2, double dis)
 {
 	dis = ((x1 - x2) * (x1 - x2)) + ((y1 - y2) * (y1 - y2));
-	dis = sqrt(dis);
+	dis = sqrt(dis); // 루트 계산
 
 	printf("(%d, %d)~(%d, %d) 직선의 길이: %.6f", x1, y1, x2, y2, dis);
 }
