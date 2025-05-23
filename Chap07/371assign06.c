@@ -11,12 +11,17 @@ void array();
 void printArray(double arrayDouble[], int size);
 void ArrayRe(double arrayDouble[], int size);
 
+// 함수를 호출하고 프로그램을 정상적으로 종료하는 함수
 int main()
 {
 	array();
 	return 0;
 }
 
+/*
+	변수의 선언 및 초기화, 함수의 호출을 통해 원래 배열을 출력하고 
+	역순 배열을 받아와 역순 배열을 출력하는 함수
+*/
 void array()
 {
 	double arrayDouble[10] = { 1.2, 3.1, 4.3, 4.5, 6.7, 2.3, 8.7, 9.5, 2.3, 5.8 };
@@ -31,15 +36,21 @@ void array()
 	printArray(arrayDouble, size);
 }
 
+// 배열을 출력하는 함수
 void printArray(double arrayDouble[], int size)
 {
 	for (int i = 0; i < size; i++)
 	{
-		printf("%.1lf ", arrayDouble[i]);
-	}
+		printf("%.1lf ", arrayDouble[i]); /*
+											배열 속 값들은 모두 소수점 첫째자리에서 끝나는 값이므로
+											%.1lf로 정확히 출력할 수 있도록 했다.
+											*/
+	}				
+											
 	printf("\n");
 }
 
+// 배열을 역순으로 바꾸는 함수
 void ArrayRe(double arrayDouble[], int size)
 {
 	/*

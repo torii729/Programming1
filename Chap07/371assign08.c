@@ -15,12 +15,17 @@ void menu();
 void calculate(int array[], int arrayDisc[], int discount, int size);
 void printArray(int array[], int arrayDisc[], int size);
 
+// 함수를 출력하고 정상적으로 프로그램을 종료하는 함수
 int main()
 {
 	menu();
 	return 0;
 }
 
+/*
+	변수의 선언 및 초기화, 상품가와 할인율을 입력받고
+	함수 호출을 통해 할인가를 구하고 출력하는 함수
+*/ 
 void menu()
 {
 	int array[5] = { 0 };
@@ -42,6 +47,7 @@ void menu()
 	printArray(array, arrayDisc, size);
 }
 
+// 할인가를 계산하는 함수
 void calculate(int array[], int arrayDisc[], int discount, int size)
 {
 	double disc = (100.0 - discount) / 100.0;
@@ -52,6 +58,7 @@ void calculate(int array[], int arrayDisc[], int discount, int size)
 	}
 }
 
+// 두 배열을 순서대로 출력하는 함수
 void printArray(int array[], int arrayDisc[], int size)
 {
 	for (int a = 0; a < size; a++)

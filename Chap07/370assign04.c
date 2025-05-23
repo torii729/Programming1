@@ -19,12 +19,14 @@ void maxArray(int arrayInt[], int size);
 void minArray(int arrayInt[], int size);
 void printArray(int arrayInt[], int size);
 
+// 함수를 호출하고 정상적으로 프로그램을 종료하는 함수
 int main()
 {
 	array();
 	return 0;
 }
 
+// 변수의 선언 및 초기화, 함수 호출을 통해 배열의 최댓값과 최솟값을 구하는 함수
 void array()
 {
 	int arrayInt[10] = { 23, 45, 62, 12, 99, 83, 23, 50, 72, 37 };
@@ -35,6 +37,7 @@ void array()
 	minArray(arrayInt, size);	
 }
 
+// 배열을 출력하는 함수
 void printArray(int arrayInt[], int size)
 {
 	printf("배열 : ");
@@ -46,6 +49,7 @@ void printArray(int arrayInt[], int size)
 	printf("\n");
 }
 
+// 배열 속 최댓값을 찾는 함수
 void maxArray(int arrayInt[], int size)
 {
 	int max = arrayInt[0];
@@ -56,14 +60,17 @@ void maxArray(int arrayInt[], int size)
 		if (arrayInt[i] > max)
 		{
 			max = arrayInt[i];
-			maxIndex = i;
+			maxIndex = i; /*
+							0으로 초기화된 변수인 인덱스에 최댓값일 때의 반복변수를 대입하여
+							최댓값일 때의 인덱스를 출력할 수 있다.
+							*/
 		}
 	}
 
 	printf("최댓값 : 인덱스 = %d, 값 = %d\n", maxIndex, max);
 }
 
-
+// 배열 속 최솟값을 찾는 함수
 void minArray(int arrayInt[], int size)
 {
 	int min = arrayInt[0];

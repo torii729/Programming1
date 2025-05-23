@@ -11,11 +11,11 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-
 void fillCD(int arr[], int size, int start, int diff);
 int Assign01();
 void printArray(int arr[], int size);
 
+// 함수 호출, Assign01 함수에서 나온 값을 반환함
 int main()
 {
     return Assign01();
@@ -39,6 +39,7 @@ int Assign01()
     return 0;
 }
 
+// 입력받은 초기값(첫째 항)과 등차를 이용하여 등차수열을 계산하는 함수 
 void fillCD(int arr[], int size, int start, int diff)
 {
     int i;
@@ -52,6 +53,7 @@ void fillCD(int arr[], int size, int start, int diff)
     }
 }
 
+// 배열을 순서대로 출력하는 함수
 void printArray(int arr[], int size)
 {
     int i = 0;
