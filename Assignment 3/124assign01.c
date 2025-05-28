@@ -1,13 +1,13 @@
-/* ÆÄÀÏ¸í: 124assign01.c
-   * ³»¿ë: 01. ÇÑ º¯ÀÇ ±æÀÌ¸¦ ÀÔ·Â¹Þ¾Æ Á¤»ç°¢ÇüÀÇ ³ÐÀÌ¿Í µÑ·¹¸¦
-   *	±¸ÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
-   * ³¯Â¥: 2025.4.4
+/* íŒŒì¼ëª…: 124assign01.c
+   * ë‚´ìš©: 01. í•œ ë³€ì˜ ê¸¸ì´ë¥¼ ìž…ë ¥ë°›ì•„ ì •ì‚¬ê°í˜•ì˜ ë„“ì´ì™€ ë‘˜ë ˆë¥¼
+   *	êµ¬í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì‹œì˜¤.
+   * ë‚ ì§œ: 2025.4.4
    */
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-//»ç¿ëÇÒ ÇÔ¼ö ¼±¾ð
+//ì‚¬ìš©í•  í•¨ìˆ˜ ì„ ì–¸
 void nemo(void);
 
 int main()
@@ -17,20 +17,20 @@ int main()
 }
 
 void nemo(void) {
-    //º¯¼ö ¼±¾ð ¹× ÃÊ±âÈ­(ÇÑ º¯ÀÇ ±æÀÌ, ³ÐÀÌ, µÑ·¹)
+    //ë³€ìˆ˜ ì„ ì–¸ ë° ì´ˆê¸°í™”(í•œ ë³€ì˜ ê¸¸ì´, ë„“ì´, ë‘˜ë ˆ)
     int s = 0;
     int a = 0;
     int p = 0;
 
-    //ÇÑ º¯ÀÇ ±æÀÌ ÀÔ·Â¹Þ±â
-    printf("ÇÑ º¯ÀÇ ±æÀÌ? ");
+    //í•œ ë³€ì˜ ê¸¸ì´ ìž…ë ¥ë°›ê¸°
+    printf("í•œ ë³€ì˜ ê¸¸ì´? ");
     scanf("%d", &s);
 
-    a = s * s; //Á¤»ç°¢ÇüÀÇ ³ÐÀÌ = ÇÑ º¯ÀÇ ±æÀÌ * ÇÑ º¯ÀÇ ±æÀÌ
-    p = 4 * s; //Á¤»ç°¢ÇüÀÇ µÑ·¹ = ÇÑ º¯ÀÇ ±æÀÌ * 4
+    a = s * s; //ì •ì‚¬ê°í˜•ì˜ ë„“ì´ = í•œ ë³€ì˜ ê¸¸ì´ * í•œ ë³€ì˜ ê¸¸ì´
+    p = 4 * s; //ì •ì‚¬ê°í˜•ì˜ ë‘˜ë ˆ = í•œ ë³€ì˜ ê¸¸ì´ * 4
 
-    printf("Á¤»ç°¢ÇüÀÇ ³ÐÀÌ: %d\n", a);
-    printf("Á¤»ç°¢ÇüÀÇ µÑ·¹: %d\n", p);
+    printf("ì •ì‚¬ê°í˜•ì˜ ë„“ì´: %d\n", a);
+    printf("ì •ì‚¬ê°í˜•ì˜ ë‘˜ë ˆ: %d\n", p);
 
     return 0;
 }

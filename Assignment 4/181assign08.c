@@ -1,42 +1,42 @@
-/* ÆÄÀÏ¸í: 181assign08.c
-   * ³»¿ë: 08. ¹ÝÁö¸§ÀÇ ±æÀÌ¸¦ ÀÔ·Â¹Þ¾Æ ±¸ÀÇ ºÎÇÇ¸¦ ±¸ÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
-   *	ÀÌ¶§ ÆÄÀÌ´Â 3.141592¶ó°í ÇÏÀÚ.
-   * ÀÛ¼ºÀÚ: °­±â¹Î
-   * ³¯Â¥: 2025.4.11
+/* íŒŒì¼ëª…: 181assign08.c
+   * ë‚´ìš©: 08. ë°˜ì§€ë¦„ì˜ ê¸¸ì´ë¥¼ ìž…ë ¥ë°›ì•„ êµ¬ì˜ ë¶€í”¼ë¥¼ êµ¬í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì‹œì˜¤.
+   *	ì´ë•Œ íŒŒì´ëŠ” 3.141592ë¼ê³  í•˜ìž.
+   * ìž‘ì„±ìž: ê°•ê¸°ë¯¼
+   * ë‚ ì§œ: 2025.4.11
    */
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-// Á¦°ö ¶Ç´Â ¼¼Á¦°ö °è»êÀ» À§ÇØ(pow ÇÔ¼ö) <math.h> Çì´õ ÆÄÀÏÀ» Æ÷ÇÔÇß´Ù.
+// ì œê³± ë˜ëŠ” ì„¸ì œê³± ê³„ì‚°ì„ ìœ„í•´(pow í•¨ìˆ˜) <math.h> í—¤ë” íŒŒì¼ì„ í¬í•¨í–ˆë‹¤.
 #include <math.h>
 
-// ÆÄÀÌ¸¦ ¹Ì¸® ¼±¾ðÇÔÀ¸·Î½á ÄÚµå¸¦ °£ÆíÇÏ°Ô
+// íŒŒì´ë¥¼ ë¯¸ë¦¬ ì„ ì–¸í•¨ìœ¼ë¡œì¨ ì½”ë“œë¥¼ ê°„íŽ¸í•˜ê²Œ
 #define PI 3.141592
 
-// ±¸ÀÇ ºÎÇÇ¸¦ °è»êÇÏ´Â ÇÔ¼ö ¼±¾ð
+// êµ¬ì˜ ë¶€í”¼ë¥¼ ê³„ì‚°í•˜ëŠ” í•¨ìˆ˜ ì„ ì–¸
 void gu(void);
 
-// ¸ÞÀÎ ÇÔ¼ö, ±¸ÀÇ ºÎÇÇ¸¦ °è»êÇÏ´Â ÇÔ¼ö¸¦ È£ÃâÇÑ´Ù.
+// ë©”ì¸ í•¨ìˆ˜, êµ¬ì˜ ë¶€í”¼ë¥¼ ê³„ì‚°í•˜ëŠ” í•¨ìˆ˜ë¥¼ í˜¸ì¶œí•œë‹¤.
 int main()
 {
 	gu();
 	return 0;
 }
 
-// ¹ÝÁö¸§ÀÇ ±æÀÌ¸¦ ÀÔ·Â¹Þ°í ±¸ÀÇ ºÎÇÇ¸¦ °è»êÇÏ´Â ÇÔ¼ö
+// ë°˜ì§€ë¦„ì˜ ê¸¸ì´ë¥¼ ìž…ë ¥ë°›ê³  êµ¬ì˜ ë¶€í”¼ë¥¼ ê³„ì‚°í•˜ëŠ” í•¨ìˆ˜
 void gu(void)
 {
 	double radius = 0;
 	double vol = 0;
 
-	printf("¹ÝÁö¸§ÀÇ ±æÀÌ? ");
+	printf("ë°˜ì§€ë¦„ì˜ ê¸¸ì´? ");
 	scanf("%lf", &radius);
 
-	// ±¸ÀÇ ºÎÇÇ °ø½Ä
+	// êµ¬ì˜ ë¶€í”¼ ê³µì‹
 	vol = (4.0 / 3.0) * pow(radius, 3) * PI;
 
-	printf("±¸ÀÇ ºÎÇÇ: %lf", vol);
+	printf("êµ¬ì˜ ë¶€í”¼: %lf", vol);
 
 	return 0;
 }

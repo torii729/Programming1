@@ -1,17 +1,17 @@
-/* ÆÄÀÏ¸í: 070assign02.c
-   * ³»¿ë: 02. ÇÐ»ýÀÇ ¹øÈ£¿Í ÇÐÁ¡À» ÀÔ·Â¹Þ¾Æ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
-		ÇÐ»ýÀÇ ¹øÈ£´Â Á¤¼ö·Î, ÇÐÁ¡Àº ½Ç¼ö·Î ÀÔ·Â¹Þ´Â´Ù.
-   * ÀÛ¼ºÀÚ: °­±â¹Î
-   * ³¯Â¥: 2025.3.20
+/* íŒŒì¼ëª…: 070assign02.c
+   * ë‚´ìš©: 02. í•™ìƒì˜ ë²ˆí˜¸ì™€ í•™ì ì„ ìž…ë ¥ë°›ì•„ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì‹œì˜¤.
+		í•™ìƒì˜ ë²ˆí˜¸ëŠ” ì •ìˆ˜ë¡œ, í•™ì ì€ ì‹¤ìˆ˜ë¡œ ìž…ë ¥ë°›ëŠ”ë‹¤.
+   * ìž‘ì„±ìž: ê°•ê¸°ë¯¼
+   * ë‚ ì§œ: 2025.3.20
    */
 
 
 #define _CRT_SECURE_NO_WARNINGS
 
-//ÀÔÃâ·Â ¶óÀÌºê·¯¸®
+//ìž…ì¶œë ¥ ë¼ì´ë¸ŒëŸ¬ë¦¬
 #include <stdio.h>
 
-//Á¡¼ö°ú ÇÐ¹øÀ» ÀÔ·Â¹ÞÀ» ÇÔ¼ö ¼±¾ð
+//ì ìˆ˜ê³¼ í•™ë²ˆì„ ìž…ë ¥ë°›ì„ í•¨ìˆ˜ ì„ ì–¸
 void score(void);
 
 int main()
@@ -23,17 +23,17 @@ int main()
 
 void score()
 {
-	//¹øÈ£¿Í ÇÐÁ¡À» ÀúÀåÇÒ º¯¼ö ¼±¾ð
+	//ë²ˆí˜¸ì™€ í•™ì ì„ ì €ìž¥í•  ë³€ìˆ˜ ì„ ì–¸
 	int num;
 	float gra;
 
-	//¹øÈ£¿Í ÇÐÁ¡À» °¢°¢ ÀÔ·Â¹ÞÀ½
-	printf("¹øÈ£? ");
+	//ë²ˆí˜¸ì™€ í•™ì ì„ ê°ê° ìž…ë ¥ë°›ìŒ
+	printf("ë²ˆí˜¸? ");
 	scanf("%d", &num);
 
-	printf("ÇÐÁ¡? ");
+	printf("í•™ì ? ");
 	scanf("%f", &gra);
 
-	//ÀÔ·Â¹ÞÀº °ªÀ» Ãâ·Â
-	printf("%d¹ø ÇÐ»ýÀÇ ÇÐÁ¡Àº %fÀÔ´Ï´Ù.", num, gra);
+	//ìž…ë ¥ë°›ì€ ê°’ì„ ì¶œë ¥
+	printf("%dë²ˆ í•™ìƒì˜ í•™ì ì€ %fìž…ë‹ˆë‹¤.", num, gra);
 }

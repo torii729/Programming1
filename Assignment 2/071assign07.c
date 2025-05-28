@@ -1,8 +1,8 @@
-/* ÆÄÀÏ¸í: 071assign07.c
-   * ³»¿ë: Ä¿ÇÇ »çÀÌÁî(S, T, G)¿Í ÁÖ¹® ¼ö·®À» ÀÔ·Â¹Þ¾Æ¼­ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
-		Ä¿ÇÇ »çÀÌÁî´Â S, T, G ¼¼ °¡Áö ¹®ÀÚ Áß ÇÏ³ª·Î ÀÔ·Â¹Þ´Â´Ù.
-   * ÀÛ¼ºÀÚ: °­±â¹Î
-   * ³¯Â¥: 2025.3.20
+/* íŒŒì¼ëª…: 071assign07.c
+   * ë‚´ìš©: ì»¤í”¼ ì‚¬ì´ì¦ˆ(S, T, G)ì™€ ì£¼ë¬¸ ìˆ˜ëŸ‰ì„ ìž…ë ¥ë°›ì•„ì„œ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì‹œì˜¤.
+		ì»¤í”¼ ì‚¬ì´ì¦ˆëŠ” S, T, G ì„¸ ê°€ì§€ ë¬¸ìž ì¤‘ í•˜ë‚˜ë¡œ ìž…ë ¥ë°›ëŠ”ë‹¤.
+   * ìž‘ì„±ìž: ê°•ê¸°ë¯¼
+   * ë‚ ì§œ: 2025.3.20
    */
 
 
@@ -23,10 +23,10 @@ void caffee()
 	int num;
 	char size;
 
-	printf("Ä¿ÇÇ »çÀÌÁî(S, T, G)¿Í ¼ö¹® ¼ö·®? ");
+	printf("ì»¤í”¼ ì‚¬ì´ì¦ˆ(S, T, G)ì™€ ìˆ˜ë¬¸ ìˆ˜ëŸ‰? ");
 	scanf("%c %d", &size, &num);
 
-	printf("%c »çÀÌÁî %dÀÜÀ» ÁÖ¹®ÇÕ´Ï´Ù.", size, num);
+	printf("%c ì‚¬ì´ì¦ˆ %dìž”ì„ ì£¼ë¬¸í•©ë‹ˆë‹¤.", size, num);
 
 	return 0;
 }

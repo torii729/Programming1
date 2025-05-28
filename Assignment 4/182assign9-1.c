@@ -1,17 +1,17 @@
-/* ÆÄÀÏ¸í: 182assign9-1.c
-   * ³»¿ë: 09. µ¿¿µ»óÀÇ Àç»ý½Ã°£À» ÃÊ ´ÜÀ§·Î ÀÔ·Â¹Þ¾Æ ¸î ½Ã°£ ¸î ºÐ ¸î ÃÊÀÎÁö
-   *	Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
-   * ÀÛ¼ºÀÚ: °­±â¹Î
-   * ³¯Â¥: 2025.4.11
+/* íŒŒì¼ëª…: 182assign9-1.c
+   * ë‚´ìš©: 09. ë™ì˜ìƒì˜ ìž¬ìƒì‹œê°„ì„ ì´ˆ ë‹¨ìœ„ë¡œ ìž…ë ¥ë°›ì•„ ëª‡ ì‹œê°„ ëª‡ ë¶„ ëª‡ ì´ˆì¸ì§€
+   *	ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì‹œì˜¤.
+   * ìž‘ì„±ìž: ê°•ê¸°ë¯¼
+   * ë‚ ì§œ: 2025.4.11
    */
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-// ½Ã°£À» Ãâ·ÂÇÒ ÇÔ¼ö ¼±¾ð
+// ì‹œê°„ì„ ì¶œë ¥í•  í•¨ìˆ˜ ì„ ì–¸
 void time(void);
 
-// ¸ÞÀÎ ÇÔ¼ö, ½Ã°£À» Ãâ·ÂÇÒ ÇÔ¼ö¸¦ È£ÃâÇÔ
+// ë©”ì¸ í•¨ìˆ˜, ì‹œê°„ì„ ì¶œë ¥í•  í•¨ìˆ˜ë¥¼ í˜¸ì¶œí•¨
 int main()
 {
 	time();
@@ -25,19 +25,19 @@ void time()
 	int min = 0;
 	int sec = 0;
 
-	printf("Àç»ý½Ã°£(ÃÊ)? ");
+	printf("ìž¬ìƒì‹œê°„(ì´ˆ)? ");
 	scanf("%d", &total_cho);
 
 	/*
-		ÃÊ¸¦ 3600À¸·Î ³ª´²¼­ ½Ã°£ ´ÜÀ§·Î È¯»êÇÏ°í
-		³ª¸ÓÁö¸¦ 60À¸·Î ³ª´² ºÐ ´ÜÀ§·Î È¯»êÇÔ
-		±×¸®°í 60ÃÊ ´ÜÀ§·Î ³ª´­ ¼ö ÀÖ´Â ºÎºÐÀ» Á¦¿ÜÇÑ ³ª¸ÓÁö¸¦ ±¸ÇÔ
+		ì´ˆë¥¼ 3600ìœ¼ë¡œ ë‚˜ëˆ ì„œ ì‹œê°„ ë‹¨ìœ„ë¡œ í™˜ì‚°í•˜ê³ 
+		ë‚˜ë¨¸ì§€ë¥¼ 60ìœ¼ë¡œ ë‚˜ëˆ  ë¶„ ë‹¨ìœ„ë¡œ í™˜ì‚°í•¨
+		ê·¸ë¦¬ê³  60ì´ˆ ë‹¨ìœ„ë¡œ ë‚˜ëˆŒ ìˆ˜ ìžˆëŠ” ë¶€ë¶„ì„ ì œì™¸í•œ ë‚˜ë¨¸ì§€ë¥¼ êµ¬í•¨
 	*/
 	hour = total_cho / 3600;
 	min = (total_cho % 3600) / 60;
 	sec = total_cho % 60;
 
-	printf("Àç»ý½Ã°£Àº %d½Ã°£ %dºÐ %dÃÊÀÔ´Ï´Ù.", hour, min, sec);
+	printf("ìž¬ìƒì‹œê°„ì€ %dì‹œê°„ %dë¶„ %dì´ˆìž…ë‹ˆë‹¤.", hour, min, sec);
 
 	return 0;
 }
