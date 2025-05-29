@@ -24,12 +24,12 @@ void testContact()
     Contact c3 = { "김", "01009876543", WOMAN, 2025 };
 
     printContact(c1);
-    // printContactPtr(&c2);
+    printContactPtr(&c2);
 
     int result1 = isEqualContact(c1, c2);
-    // int result2 = isEqualContactPtr(&c2, &c3); // 변수의 주소를 넘겨줘야 한다(Contact.c의 해당 함수 참고).
+    int result2 = isEqualContactPtr(&c2, &c3); // 변수의 주소를 넘겨줘야 한다(Contact.c의 해당 함수 참고).
 
     // 삼항 연산자를 이용하면 if문 없이도 간결하게 출력할 수 있다.
     printf("c1과 c2는 %s \n", result1 ? "같습니다" : "다릅니다");
-    // printf("c2와 c3는 %s \n", result2 ? "같습니다" : "다릅니다");
+    printf("c2와 c3는 %s \n", result2 ? "같습니다" : "다릅니다");
 }

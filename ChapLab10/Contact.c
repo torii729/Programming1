@@ -39,7 +39,6 @@ void printContact(Contact ct)
 //
 // 이 밑은 포인터변수 사용, 안전하게 const 변수로 선언한다.
 //
-/*
 
 int isEqualContactPtr(const Contact* a, const Contact* b)
 {
@@ -65,5 +64,3 @@ void printContactPtr(const Contact* ct)
     printf("성별 : %s \n", ct->gender == MAN ? "남자" : "여자");
     printf("날짜(연도) : %4d \n", ct->year);
 }
-
-*/
