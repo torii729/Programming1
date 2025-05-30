@@ -10,21 +10,28 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
+// 좌표를 나타내는 구조체 선언
 typedef struct POINT
 {
-	int x;
-	int y;
+	int x; // x좌표
+	int y; // y좌표
 }Point;
 
+// 직사각형 정보를 나타내는 구조체를 선언
 typedef struct RECT
 {
-	Point left_bottom;
-	Point right_top;
+	Point left_bottom; // 좌하단점
+	Point right_top; // 우상단점
 }Rect;
 
+// 좌표를 입력받는 함수와 출력하는 함수 선언
 void input(Rect * square);
 void print_rect(Rect square);
 
+/*
+	main 함수
+	 구조체 변수를 선언하고 함수 호출을 통해 좌표를 출력하는 함수
+*/
 int main()
 {
 	Rect square;
@@ -35,6 +42,11 @@ int main()
 	return 0;
 }
 
+/*
+	input 함수
+	 좌하단점과 우상단점을 입력받아 구조체에 저장
+	포인터를 사용해 주소를 전달하여 구조체 변수인 square를 수정한다.
+*/
 void input(Rect * square)
 {
 	printf("직사각형의 좌하단점(x, y)? ");
@@ -44,6 +56,10 @@ void input(Rect * square)
 	scanf("%d %d", &square->right_top.x, &square->right_top.y);
 }
 
+/*
+	print_rect 함수
+	 직사각형 좌표를 출력하는 함수
+*/
 void print_rect(Rect square)
 {
 	printf("[RECT 좌하단점 : (%d, %d), 우상단점 : (%d, %d)]",

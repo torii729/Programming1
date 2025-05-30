@@ -11,6 +11,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
+// 제품 정보를 관리하는 구조체 선언
 typedef struct PRODUCT
 {
 	char name[20];
@@ -18,9 +19,15 @@ typedef struct PRODUCT
 	int stock;
 }Product;
 
+// 입력받는 함수와 출력하는 함수 선언
 void input(Product * menu);
 void print_product(Product menu);
 
+/*
+	main 함수
+	 구조체 변수를 출력하고 함수 호출을 통해 제품 정보를 출력한다.
+	 그리고 정상적으로 프로그램을 종료하는 함수
+*/
 int main()
 {
 	Product menu;
@@ -31,6 +38,12 @@ int main()
 	return 0;
 }
 
+/*
+	input 함수
+	 제품 정보를 입력받아 구조체 멤버에 저장
+	Product 구조체 변수의 주소를 포인터로 받아오고
+	포인터를 사용해 구조체 변수 menu를 직접 수정하는 함수
+*/
 void input(Product * menu)
 {
 	printf("제품명? ");
@@ -43,6 +56,10 @@ void input(Product * menu)
 	scanf("%d", &menu->stock);
 }
 
+/*
+	print_product 함수
+	 구조체 변수를 값으로 전달받아 제품 정보를 출력하는 함수
+*/
 void print_product(Product menu)
 {
 	printf("[%s %d원 재고 : %d]", menu.name, menu.price, menu.stock);
