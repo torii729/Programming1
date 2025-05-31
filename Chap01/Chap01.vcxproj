@@ -30,7 +30,7 @@
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{8a8fd013-c8d9-4e68-ae24-b35ec8f9717c}</ProjectGuid>
-    <RootNamespace>Assignment1</RootNamespace>
+    <RootNamespace>Chap01</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>Chap01</ProjectName>
   </PropertyGroup>
