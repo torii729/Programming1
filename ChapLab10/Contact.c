@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h> // 입출력을 위한 헤더 파일 호출
 #include "Contact.h" // 내가 만든 헤더 파일을 불러올 때는 <>가 아니라 ""로 불러올 것
 #include <string.h> // strcmp 함수를 사용하기 위해 불러온 헤더 파일
 
