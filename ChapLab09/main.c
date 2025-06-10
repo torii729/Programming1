@@ -1,6 +1,9 @@
 /*
 	강의자료 보면서 예제는 꼭 적어보고
 	내가 알고 있는지 확인해봐야한다고...... 하라고......
+
+	malloc 함수와 stack, heap 영역에 대하여
+	포인터에 대하여
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -38,23 +41,37 @@ int testStrcpy()
 	return 0;
 }
 
+
 int str_swap(char * str1, char * str2, int size)
 {
 	int result = 0;
-	
+	if (size <= 0 || str1 == NULL || str2 == NULL)
+	{
+		return 0;
+	}
+
 	char* temp = NULL;
-	// void * malloc(int size); 포인터를 반환하는 함수고 size를 주면 연속된 메모리를 할당해서 시작주소를 반환하고 ...
+	// void * malloc(int size);
+	// 포인터를 반환하는 함수고 size를 주면 연속된 메모리를 할당해서 시작주소를 반환하고 ...
 	temp = (char*)malloc(sizeof(char) * size);
 	// 강제 형 변환을 적은 것이고, 동적인 배열을 만들때 쓴다. char temp[size]; 이렇게 선언할 수는 없음,
+	// temp[0] = 'A';
+
 
 	if (temp == NULL)
 	{
 		return 0;
 	}
 
-	strcpy(temp, str1);
-	strcpy(str1, str2);
-	strcpy(str2, temp);
+	/*
+	strncpy(temp, str1, size);
+	strncpy(str1, str2, size);
+	strncpy(str2, temp, size);
+	*/
+
+	strcpy_s(temp, size, str1);
+	strcpy_s(str1, size, str2);
+	strcpy_s(str2, size, temp);
 
 	result = strlen(str1) + strlen(str2);
 
