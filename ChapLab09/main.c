@@ -4,6 +4,15 @@
 
 	malloc 함수와 stack, heap 영역에 대하여
 	포인터에 대하여
+	puts 함수에 대하여
+	strtok 함수
+	fgets(gets, gets_s) 함수
+
+	fopen_s? strtok_s?
+	공백 문자 없애주는 함수?
+
+	// strtok 함수 : 문자열을 원하는 대로 자를 때 쓰는 함수
+	// puts 함수 : str과 줄바꿈 문자를 출력하는 함수
 */
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -14,17 +23,67 @@
 
 int testStrlen();
 int testStrcpy();
+int test_string();
 int str_swap(char* str1, char* str2, int size);
 
 int main()
 {
 	// testStrlen();
-	testStrcpy();
+	// testStrcpy();
+	// str_swap();
+	
+	test_string();
+
+	return 0;
+}
+
+#define SIZE 128
+int test_string()
+{
+	char in_str[SIZE] = "";
+	char out_str[SIZE] = "";
+
+	char* pContext = NULL;
+
+	printf("Enter a string : ");
+	// gets_s(in_str, sizeof(in_str)); // (배열명, sizeof(배열명))이 안전~ 안전~
+	// fgets(in_str, sizeof(in_str), stdin); // stdin이란 키보드 파일?
+	
+	/*
+		파일 경로 복사한 것을 이용하여 파일 여는 방법 :
+			FILE* mycontact = fopen("C:\Users\user\Downloads\mycontact.txt", "r")
+
+		그러나 비주얼 스튜디오의 헤더 파일에다 내가 작성한 파일을 불러오면 된다
+	*/ 
+
+	FILE* mycontact = fopen("mycontact.txt", "r");
+
+	if (mycontact == NULL)
+	{
+		printf("Fail to open file\n");
+		return -1;
+	}
+
+	// 반복문으로 파일 정보 다 읽을 수 있게 
+	while (fgets(in_str, sizeof(in_str), mycontact) != NULL)
+	{
+		puts(in_str);
+
+		char* pToken = strtok_s(in_str, "| ", &pContext);
+		if (pToken != NULL) puts(pToken);
+
+		pToken = strtok_s(NULL, "| ", &pContext);
+		if (pToken != NULL) puts(pToken);
+
+		pToken = strtok_s(NULL, "| ", &pContext);
+		if (pToken != NULL) puts(pToken);
+	}
+
+	fclose(mycontact);
 	return 0;
 }
 
 #define STR_SIZE 10
-
 int testStrcpy()
 {
 	char str1[STR_SIZE] = "";
@@ -37,10 +96,8 @@ int testStrcpy()
 	str_swap(str1, str2, STR_SIZE);
 	printf("%s %s (이)가 교환이 되었는가?\n", str1, str2);
 
-
 	return 0;
 }
-
 
 int str_swap(char * str1, char * str2, int size)
 {
@@ -97,4 +154,3 @@ int testStrlen()
 
 	return 0;
 }
-
