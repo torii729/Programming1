@@ -63,7 +63,9 @@
 	strcat 함수 : 문자열을 "연결"하는 함수
 	strlen 함수 : 문자열의 "길이를 반환"하는 함수
 	strcpy 함수 : 문자열을 "복사"하는 함수 (strcpy(a1, a2)처럼 사용)
+	-> strcpy 함수와 다르게 strcpy_s 함수는 strcpy_s(a1, n, a2) 이런 식임
 	-> strncpy 함수 : 문자열을 "지정한 길이만큼" 복사하는 함수 (strncpy(a1, a2, n)처럼 사용)
+	-> strncpy 함수와 다르게 strncpy_s 함수는 strncpy_s(a1, n, a2, n) 이런 식임 
 	n이 붙는 이유 : n은 복사할 길이를 지정하기 때문.
 
 	puts 함수 : str과 줄바꿈 문자를 "출력하는" 함수
